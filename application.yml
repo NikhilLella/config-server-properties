@@ -4,10 +4,16 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka    
+    
 spring:
+ 
   datasource:
     url: jdbc:sqlserver://localhost;databaseName=HotelReservation
     username: lella
     password: Itachi@122
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
     
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
